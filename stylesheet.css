@@ -1,0 +1,280 @@
+
+body {
+    margin:0;
+    padding:0;
+        background: pink; /* For browsers that do not support gradients */        
+        background: -webkit-linear-gradient(-45deg, pink, white); /* For Safari 5.1 to 6.0 */
+        background: -o-linear-gradient(-45deg, pink, white); /* For Opera 11.1 to 12.0 */
+        background: -moz-linear-gradient(-45deg, pink, white); /* For Firefox 3.6 to 15 */
+        background: linear-gradient(-45deg, pink, white); /* Standard syntax (must be last) */
+}
+
+footer {
+
+text-align: center;
+    color: white; 
+    text-shadow: 3px 2px red;
+    font-size: 2em;
+}
+
+    
+.coming-soon {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+}
+
+.mitch_header {    
+    font-size:8em;
+    font-weight: bold;
+    padding-top:.5em; 
+    padding-bottom: .5em; 
+    text-align: center; 
+    color: white; 
+    text-shadow: 10px 2px red;
+    letter-spacing: 1em;}
+
+    h1 .char1         {display: inline-block; -webkit-transform: rotate(-25deg);}
+    h1 .char2         {display: inline-block; -webkit-transform: rotate(30deg);}
+    h1 .char3         {display: inline-block; -webkit-transform: rotate(-10deg);}
+    h1 .char4         {display: inline-block; -webkit-transform: rotate(15deg);}
+    h1 .char5         {display: inline-block; -webkit-transform: rotate(-20deg);}
+    h1 .char6         {display: inline-block; -webkit-transform: rotate(15deg);}
+    h1 .char7         {display: inline-block; -webkit-transform: rotate(-20deg);}
+    h1 .char9         {display: inline-block; -webkit-transform: rotate(-25deg);}
+    h1 .char10         {display: inline-block; -webkit-transform: rotate(30deg);}
+    h1 .char11         {display: inline-block; -webkit-transform: rotate(-10deg);}
+    h1 .char12         {display: inline-block; -webkit-transform: rotate(15deg);}
+    h1 .char13        {display: inline-block; -webkit-transform: rotate(-20deg);}
+    h1 .char14         {display: inline-block; -webkit-transform: rotate(15deg);}
+    h1 .char15         {display: inline-block; -webkit-transform: rotate(-20deg);}
+
+
+    h1 .char1:link    {color:white; background-color:transparent; text-decoration:none;}
+    h1 .char1:visited {color:white; background-color:transparent; text-decoration:none;}
+    h1 .char1:hover   {color:purple; background-color:transparent; text-decoration:none; background-color: yellow;}
+    h1 .char1:active  {color:white; background-color:transparent; text-decoration:none; background-color: yellow;}}
+   
+
+    h1 .char2:link    {color:white; background-color:transparent; text-decoration:none;}
+    h1 .char2:visited {color:white; background-color:transparent; text-decoration:none;}
+    h1 .char2:hover   {color:aqua; background-color:transparent; text-decoration:none; background-color: yellow;}
+    h1 .char2:active  {color:white; background-color:transparent; text-decoration:none; background-color: yellow;}}
+
+
+    h1 .char3:link    {color:white; background-color:transparent; text-decoration:none;}
+    h1 .char3:visited {color:white; background-color:transparent; text-decoration:none;}
+    h1 .char3:hover   {color:green; background-color:transparent; text-decoration:none; background-color: yellow;}
+    h1 .char3:active  {color:white; background-color:transparent; text-decoration:none; background-color: yellow;}}
+
+
+    h1 .char4:link    {color:white; background-color:transparent; text-decoration:none;}
+    h1 .char4:visited {color:white; background-color:transparent; text-decoration:none;}
+    h1 .char4:hover   {color:grey; background-color:transparent; text-decoration:none; background-color: yellow;}
+    h1 .char4:active  {color:white; background-color:transparent; text-decoration:none; background-color: yellow;}}
+
+
+    h1 .char5:link    {color:white; background-color:transparent; text-decoration:none;}
+    h1 .char5:visited {color:white; background-color:transparent; text-decoration:none;}
+    h1 .char5:hover   {color:orange; background-color:transparent; text-decoration:none; background-color: yellow;}
+    h1 .char5:active  {color:white; background-color:transparent; text-decoration:none; background-color: yellow;}}
+
+    h1 .char6:link    {color:white; background-color:transparent; text-decoration:none;}
+    h1 .char6:visited {color:white; background-color:transparent; text-decoration:none;}
+    h1 .char6:hover   {color:purple; background-color:transparent; text-decoration:none; background-color: yellow;}
+    h1 .char6:active  {color:white; background-color:transparent; text-decoration:none; background-color: yellow;}}
+
+
+    h1 .char7:link    {color:white; background-color:transparent; text-decoration:none;}
+    h1 .char7:visited {color:white; background-color:transparent; text-decoration:none;}
+    h1 .char7:hover   {color:aqua; background-color:transparent; text-decoration:none; background-color: yellow;}
+    h1 .char7:active  {color:white; background-color:transparent; text-decoration:none; background-color: yellow;}}
+
+    h1 .char8:link    {color:white; background-color:transparent; text-decoration:none;}
+    h1 .char8:visited {color:white; background-color:transparent; text-decoration:none;}
+    h1 .char8:hover   {color:purple; background-color:transparent; text-decoration:none; background-color: yellow;}
+    h1 .char8:active  {color:white; background-color:transparent; text-decoration:none; background-color: yellow;}}
+   
+
+    h1 .char9:link    {color:white; background-color:transparent; text-decoration:none;}
+    h1 .char9:visited {color:white; background-color:transparent; text-decoration:none;}
+    h1 .char9:hover   {color:aqua; background-color:transparent; text-decoration:none; background-color: yellow;}
+    h1 .char9:active  {color:white; background-color:transparent; text-decoration:none; background-color: yellow;}}
+
+
+    h1 .char10:link    {color:white; background-color:transparent; text-decoration:none;}
+    h1 .char10:visited {color:white; background-color:transparent; text-decoration:none;}
+    h1 .char10:hover   {color:green; background-color:transparent; text-decoration:none; background-color: yellow;}
+    h1 .char10:active  {color:white; background-color:transparent; text-decoration:none; background-color: yellow;}}
+
+
+    h1 .char11:link    {color:white; background-color:transparent; text-decoration:none;}
+    h1 .char11:visited {color:white; background-color:transparent; text-decoration:none;}
+    h1 .char11:hover   {color:grey; background-color:transparent; text-decoration:none; background-color: yellow;}
+    h1 .char11:active  {color:white; background-color:transparent; text-decoration:none; background-color: yellow;}}
+
+
+    h1 .char12:link    {color:white; background-color:transparent; text-decoration:none;}
+    h1 .char12:visited {color:white; background-color:transparent; text-decoration:none;}
+    h1 .char12:hover   {color:orange; background-color:transparent; text-decoration:none; background-color: yellow;}
+    h1 .char12:active  {color:white; background-color:transparent; text-decoration:none; background-color: yellow;}}
+
+    h1 .char13:link    {color:white; background-color:transparent; text-decoration:none;}
+    h1 .char13:visited {color:white; background-color:transparent; text-decoration:none;}
+    h1 .char13:hover   {color:purple; background-color:transparent; text-decoration:none; background-color: yellow;}
+    h1 .char13:active  {color:white; background-color:transparent; text-decoration:none; background-color: yellow;}}
+
+
+    h1 .char14:link    {color:white; background-color:transparent; text-decoration:none;}
+    h1 .char14:visited {color:white; background-color:transparent; text-decoration:none;}
+    h1 .char14:hover   {color:aqua; background-color:transparent; text-decoration:none; background-color: yellow;}
+    h1 .char14:active  {color:white; background-color:transparent; text-decoration:none; background-color: yellow;}}
+
+    footer .char1:link    {color:white; background-color:transparent; text-decoration:none;}
+    footer .char1:visited {color:white; background-color:transparent; text-decoration:none;}
+    footer .char1:hover   {color:purple; background-color:transparent; text-decoration:none; background-color: yellow;}
+    footer .char1:active  {color:white; background-color:transparent; text-decoration:none; background-color: yellow;}}
+   
+
+    footer .char2:link    {color:white; background-color:transparent; text-decoration:none;}
+    footer .char2:visited {color:white; background-color:transparent; text-decoration:none;}
+    footer .char2:hover   {color:aqua; background-color:transparent; text-decoration:none; background-color: yellow;}
+    footer .char2:active  {color:white; background-color:transparent; text-decoration:none; background-color: yellow;}}
+
+
+    footer .char3:link    {color:white; background-color:transparent; text-decoration:none;}
+    footer .char3:visited {color:white; background-color:transparent; text-decoration:none;}
+    footer .char3:hover   {color:green; background-color:transparent; text-decoration:none; background-color: yellow;}
+    footer .char3:active  {color:white; background-color:transparent; text-decoration:none; background-color: yellow;}}
+
+
+    footer .char4:link    {color:white; background-color:transparent; text-decoration:none;}
+    footer .char4:visited {color:white; background-color:transparent; text-decoration:none;}
+    footer .char4:hover   {color:grey; background-color:transparent; text-decoration:none; background-color: yellow;}
+    footer .char4:active  {color:white; background-color:transparent; text-decoration:none; background-color: yellow;}
+
+
+    footer .char5:link    {color:white; background-color:transparent; text-decoration:none;}
+    footer .char5:visited {color:white; background-color:transparent; text-decoration:none;}
+    footer .char5:hover   {color:orange; background-color:transparent; text-decoration:none; background-color: yellow;}
+    footer .char5:active  {color:white; background-color:transparent; text-decoration:none; background-color: yellow;}
+
+    footer .char6:link    {color:white; background-color:transparent; text-decoration:none;}
+    footer .char6:visited {color:white; background-color:transparent; text-decoration:none;}
+    footer .char6:hover   {color:purple; background-color:transparent; text-decoration:none;}
+    footer .char6:active  {color:white; background-color:transparent; text-decoration:none;}
+
+
+    footer .char7:link    {color:white; background-color:transparent; text-decoration:none;}
+    footer .char7:visited {color:white; background-color:transparent; text-decoration:none;}
+    footer .char7:hover   {color:aqua; background-color:transparent; text-decoration:none; background-color: yellow;}
+    footer .char7:active  {color:white; background-color:transparent; text-decoration:none; background-color: yellow;}
+
+    footer .char8:link    {color:white; background-color:transparent; text-decoration:none;}
+    footer .char8:visited {color:white; background-color:transparent; text-decoration:none;}
+    footer .char8:hover   {color:purple; background-color:transparent; text-decoration:none; background-color: yellow;}
+    footer .char8:active  {color:white; background-color:transparent; text-decoration:none; background-color: yellow;}
+   
+
+    footer .char9:link    {color:white; background-color:transparent; text-decoration:none;}
+    footer .char9:visited {color:white; background-color:transparent; text-decoration:none;}
+    footer .char9:hover   {color:aqua; background-color:transparent; text-decoration:none; background-color: yellow;}
+    footer .char9:active  {color:white; background-color:transparent; text-decoration:none; background-color: yellow;}
+
+
+    footer .char10:link    {color:white; background-color:transparent; text-decoration:none;}
+    footer .char10:visited {color:white; background-color:transparent; text-decoration:none;}
+    footer .char10:hover   {color:green; background-color:transparent; text-decoration:none; background-color: yellow;}
+    footer .char10:active  {color:white; background-color:transparent; text-decoration:none; background-color: yellow;}
+
+
+    footer .char11:link    {color:white; background-color:transparent; text-decoration:none;}
+    footer .char11:visited {color:white; background-color:transparent; text-decoration:none;}
+    footer .char11:hover   {color:grey; background-color:transparent; text-decoration:none; background-color: yellow;}
+    footer .char11:active  {color:white; background-color:transparent; text-decoration:none; background-color: yellow;}
+
+
+    footer .char12:link    {color:white; background-color:transparent; text-decoration:none;}
+    footer .char12:visited {color:white; background-color:transparent; text-decoration:none;}
+    footer .char12:hover   {color:orange; background-color:transparent; text-decoration:none; background-color: yellow;}
+    footer .char12:active  {color:white; background-color:transparent; text-decoration:none; background-color: yellow;}
+
+    footer .char13:link    {color:white; background-color:transparent; text-decoration:none;}
+    footer .char13:visited {color:white; background-color:transparent; text-decoration:none;}
+    footer .char13:hover   {color:purple; background-color:transparent; text-decoration:none; background-color: yellow;}
+    footer .char13:active  {color:white; background-color:transparent; text-decoration:none; background-color: yellow;}
+
+
+    footer .char14:link    {color:white; background-color:transparent; text-decoration:none;}
+    footer .char14:visited {color:white; background-color:transparent; text-decoration:none;}
+    footer .char14:hover   {color:aqua; background-color:transparent; text-decoration:none; background-color: yellow;}
+    footer .char14:active  {color:white; background-color:transparent; text-decoration:none; background-color: yellow;}
+
+    footer .char15:link    {color:white; background-color:transparent; text-decoration:none;}
+    footer .char15:visited {color:white; background-color:transparent; text-decoration:none;}
+    footer .char15:hover   {color:orange; background-color:transparent; text-decoration:none; background-color: yellow;}
+    footer .char15:active  {color:white; background-color:transparent; text-decoration:none; background-color: yellow;}
+
+    footer .char16:link    {color:white; background-color:transparent; text-decoration:none;}
+    footer .char16:visited {color:white; background-color:transparent; text-decoration:none;}
+    footer .char16:hover   {color:purple; background-color:transparent; text-decoration:none; background-color: yellow;}
+    footer .char16:active  {color:white; background-color:transparent; text-decoration:none; background-color: yellow;}
+
+
+    footer .char17:link    {color:white; background-color:transparent; text-decoration:none;}
+    footer .char17:visited {color:white; background-color:transparent; text-decoration:none;}
+    footer .char17:hover   {color:aqua; background-color:transparent; text-decoration:none; background-color: yellow;}
+    footer .char17:active  {color:white; background-color:transparent; text-decoration:none; background-color: yellow;}
+
+    footer .char18:link    {color:white; background-color:transparent; text-decoration:none;}
+    footer .char18:visited {color:white; background-color:transparent; text-decoration:none;}
+    footer .char18:hover   {color:purple; background-color:transparent; text-decoration:none; background-color: yellow;}
+    footer .char18:active  {color:white; background-color:transparent; text-decoration:none; background-color: yellow;}
+   
+
+    footer .char19:link    {color:white; background-color:transparent; text-decoration:none;}
+    footer .char19:visited {color:white; background-color:transparent; text-decoration:none;}
+    footer .char19:hover   {color:aqua; background-color:transparent; text-decoration:none; background-color: yellow;}
+    footer .char19:active  {color:white; background-color:transparent; text-decoration:none; background-color: yellow;}
+
+
+    footer .char20:link    {color:white; background-color:transparent; text-decoration:none;}
+    footer .char20:visited {color:white; background-color:transparent; text-decoration:none;}
+    footer .char20:hover   {color:green; background-color:transparent; text-decoration:none; background-color: yellow;}
+    footer .char20:active  {color:white; background-color:transparent; text-decoration:none; background-color: yellow;}
+
+
+    footer .char21:link    {color:white; background-color:transparent; text-decoration:none;}
+    footer .char21:visited {color:white; background-color:transparent; text-decoration:none;}
+    footer .char21:hover   {color:grey; background-color:transparent; text-decoration:none; background-color: yellow;}
+    footer .char21:active  {color:white; background-color:transparent; text-decoration:none; background-color: yellow;}
+
+
+    footer .char22:link    {color:white; background-color:transparent; text-decoration:none;}
+    footer .char22:visited {color:white; background-color:transparent; text-decoration:none;}
+    footer .char22:hover   {color:orange; background-color:transparent; text-decoration:none; background-color: yellow;}
+    footer .char22:active  {color:white; background-color:transparent; text-decoration:none; background-color: yellow;}
+
+    footer .char23:link    {color:white; background-color:transparent; text-decoration:none;}
+    footer .char23:visited {color:white; background-color:transparent; text-decoration:none;}
+    footer .char23:hover   {color:purple; background-color:transparent; text-decoration:none; background-color: yellow;}
+    footer .char23:active  {color:white; background-color:transparent; text-decoration:none; background-color: yellow;}
+
+
+    footer .char24:link    {color:white; background-color:transparent; text-decoration:none;}
+    footer .char24:visited {color:white; background-color:transparent; text-decoration:none;}
+    footer .char24:hover   {color:aqua; background-color:transparent; text-decoration:none; background-color: yellow;}
+    footer .char24:active  {color:white; background-color:transparent; text-decoration:none; background-color: yellow;}
+
+
+@media only screen and (max-width: 375px) {
+   .mitch_header 
+}
+
+@media only screen and (max-width: 520px) {
+    .coming-soon {
+        padding-top: 90%;
+        padding-left: 10%;
+    }
+}
