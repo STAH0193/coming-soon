@@ -7,6 +7,8 @@ body {
         background: -o-linear-gradient(-45deg, pink, white); /* For Opera 11.1 to 12.0 */
         background: -moz-linear-gradient(-45deg, pink, white); /* For Firefox 3.6 to 15 */
         background: linear-gradient(-45deg, pink, white); /* Standard syntax (must be last) */
+
+        
 }
 
 footer {
@@ -38,11 +40,11 @@ footer {
     text-shadow: 10px 2px red;
     letter-spacing: .3em;}
 
-    h1 span{-webkit-transition: width .2s, height .2s, -webkit-transform .2s; /* Safari */
-    transition: width .2s, height .2s, transform .2s;}
+    h1 span{-webkit-transition: width 1s, height 1s, -webkit-transform 1s; /* Safari */
+    transition: width 1s, height 1s, transform 1s;}
 
-    h1 span:hover{    -webkit-transform: rotate(20deg); /* Safari */
-    transform: rotate(-20deg);}
+    h1 span:hover{    -webkit-transform: rotate(360deg); /* Safari */
+    transform: rotate(-360deg);}
 
     h1 .char1         {display: inline-block; -webkit-transform: rotate(-25deg);}
     h1 .char2         {display: inline-block; -webkit-transform: rotate(30deg);}
