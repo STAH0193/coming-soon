@@ -2,7 +2,6 @@
 body {
     margin:0;
     padding:0;
-    max-width: 100%;
         background: pink; /* For browsers that do not support gradients */        
         background: -webkit-linear-gradient(-45deg, pink, white); /* For Safari 5.1 to 6.0 */
         background: -o-linear-gradient(-45deg, pink, white); /* For Opera 11.1 to 12.0 */
@@ -12,29 +11,32 @@ body {
 
 footer {
 
-text-align: center;
+    text-align: center;
     color: white; 
     text-shadow: 3px 2px red;
-    font-size: 2em;
+    font-size: 1.2em;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+
 }
 
-    
-.coming-soon {
-position: absolute;
-top: 50%;
-left: 50%;
-transform: translate(-50%, -50%);
-}
 
-.mitch_header {    
-    font-size:8em;
+.mitch_header { 
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);  
+    font-size:4em;
     font-weight: bold;
     padding-top:.5em; 
     padding-bottom: .5em; 
     text-align: center; 
     color: white; 
     text-shadow: 10px 2px red;
-    letter-spacing: 1em;}
+    letter-spacing: .3em;}
 
     h1 span{-webkit-transition: width .2s, height .2s, -webkit-transform .2s; /* Safari */
     transition: width .2s, height .2s, transform .2s;}
@@ -275,13 +277,50 @@ transform: translate(-50%, -50%);
     footer .char24:active  {color:white; background-color:transparent; text-decoration:none;}
 
 
-@media only screen and (max-width: 375px) {
-   .mitch_header 
+/*iphone */
+@media only screen and (max-width: 1336px) {
+.mitch_header 
+    {font-size: 10em;
+    letter-spacing: .3em;
+}
 }
 
-@media only screen and (max-width: 520px) {
-    .coming-soon {
-        padding-top: 90%;
-        padding-left: 10%;
-    }
+/*iphone */
+@media only screen and (max-width: 1234px) {
+.mitch_header 
+    {font-size: 7em;
+    letter-spacing: .3em;
+}
+}
+
+/*iphone */
+@media only screen and (max-width: 1024px) {
+.mitch_header 
+    {font-size: 7em;
+    letter-spacing: .2em;
+}
+}
+
+/*iphone */
+@media only screen and (max-width: 414px) {
+.mitch_header 
+    {font-size: 3em;
+    letter-spacing: .2em;
+}
+}
+
+/*iphone */
+@media only screen and (max-width: 375px) {
+.mitch_header 
+    {font-size: 2em;
+    letter-spacing: .1em;
+}
+}
+
+/*iphone */
+@media only screen and (max-width: 414px) {
+.mitch_header 
+    {font-size: 3em;
+    letter-spacing: .2em;
+}
 }
