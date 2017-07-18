@@ -1,3 +1,0 @@
-RewriteEngine On
-RewriteCond %{HTTP_HOST} ^mitch\.digital
-RewriteRule (.*) http://www.mitch.digital/$1 [R=301,L]
