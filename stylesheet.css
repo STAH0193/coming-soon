@@ -1,50 +1,150 @@
 
+html,
 body {
+	position: relative;
     margin:0;
     padding:0;
+    height: 100%;
         background: pink; /* For browsers that do not support gradients */        
         background: -webkit-linear-gradient(-45deg, pink, white); /* For Safari 5.1 to 6.0 */
         background: -o-linear-gradient(-45deg, pink, white); /* For Opera 11.1 to 12.0 */
         background: -moz-linear-gradient(-45deg, pink, white); /* For Firefox 3.6 to 15 */
         background: linear-gradient(-45deg, pink, white); /* Standard syntax (must be last) */
+        background-position: center center;
+        background-size: cover;
 
-        
 }
 
 footer {
-
-    text-align: center;
-    color: white; 
-    text-shadow: 3px 2px red;
-    font-size: 1.2em;
   position: absolute;
   right: 0;
   bottom: 0;
   left: 0;
   padding: 1rem;
-
+  text-align: center;
 }
 
 
-.mitch_header { 
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);  
-    font-size:4em;
+
+.flexcroll{ width:400px;
+            height:350px;
+            overflow:scroll;
+           }
+.flexcroll{
+    scrollbar-face-color: white;
+
+}
+
+/* Let's get this party started */
+.flexcroll::-webkit-scrollbar {
+    width: 6px;
+}
+ 
+ 
+/* Handle */
+.flexcroll::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: rgba(255,0,0,0.8); 
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+
+.about {
+    position: relative;
+    margin: 0 auto;
+    border: 3px solid aqua;
+    max-width: 70%;
+    transform-style: preserve-3d
+
+}
+
+.about2 {
+    position: fixed;
+    margin-left: 30%;
+    margin-right: 15px;
+}
+
+.about3 {
+    padding: 2em;
+    width: 700px;
+    font-size: 2em; 
+    text-shadow: 5px 2px pink; 
+    color: purple;
+
+}
+.about-img {
+    position: fixed;
+    height: 100%;
+    margin-left: -15px;
+}
+
+.fill { 
+    min-height: 100%;
+    height: 100%;
+}
+
+.footer_text {  position: relative; 
+                text-align: center; bottom: 0;  
+                color: white; 
+                font-size: 12px; 
+                text-shadow: 3px 2px red; 
+                letter-spacing: .5em; 
+                padding-top: 2em;
+
+} 
+
+
+
+/*about me */
+p {
+    text-indent: 50px;
+}
+
+.table {
+
+}
+
+.data-tilt{
+    transform: translateZ(20px)
+}
+.mitch_header {    
+    font-size:7em;
     font-weight: bold;
     padding-top:.5em; 
     padding-bottom: .5em; 
     text-align: center; 
     color: white; 
     text-shadow: 10px 2px red;
-    letter-spacing: .3em;}
+    letter-spacing: 1em;
+}
 
-    h1 span{-webkit-transition: width 1s, height 1s, -webkit-transform 1s; /* Safari */
-    transition: width 1s, height 1s, transform 1s;}
+a.green:hover { color: #1ace84;  background-color:transparent; text-decoration:none; text-shadow: 5px 3px white}
+a.purple:hover { color: #a262c0;  background-color:transparent; text-decoration:none; text-shadow: 5px 3px white}
+a.teal:hover { color: #4ac0aa;  background-color:transparent; text-decoration:none; text-shadow: 5px 3px white}
+a.violet:hover { color: aqua;  background-color:transparent; text-decoration:none; text-shadow: 5px 3px white}
+a.pink:hover { color: #d529cd;  background-color:transparent; text-decoration:none; text-shadow: 5px 3px white}
 
-    h1 span:hover{    -webkit-transform: rotate(360deg); /* Safari */
-    transform: rotate(-360deg);}
+a.green:visted { color: pink;  background-color:transparent; text-decoration:none; text-shadow: 5px 3px white}
+a.purple:visted { color: pink;  background-color:transparent; text-decoration:none; text-shadow: 5px 3px white}
+a.teal:visted { color: pink;  background-color:transparent; text-decoration:none; text-shadow: 5px 3px white}
+a.violet:visted { color: pink;  background-color:transparent; text-decoration:none; text-shadow: 5px 3px white}
+a.pink:visted { color: pink;  background-color:transparent; text-decoration:none; text-shadow: 5px 3px white}
+
+a.green { color: #1ace84;  background-color:transparent; text-decoration:none; text-shadow: 5px 3px white}
+a.purple { color: #a262c0;  background-color:transparent; text-decoration:none; text-shadow: 5px 3px white}
+a.teal { color: #4ac0aa;  background-color:transparent; text-decoration:none; text-shadow: 5px 3px white}
+a.violet { color: aqua;  background-color:transparent; text-decoration:none; text-shadow: 5px 3px white}
+a.pink { color: #d529cd;  background-color:transparent; text-decoration:none; text-shadow: 5px 3px white}
+
+a.one {color: pink; text-shadow: 5px 3px white}
+
+
+
+    h1 span{-webkit-transition: width .25s, height .25s, -webkit-transform .25s; /* Safari */
+    transition: width .25s, height .25s, transform .25s;}
+
+    h1 span:hover{    -webkit-transform: translateY(.5em); /* Safari */
+    transform: translateY(.5em);}
 
     h1 .char1         {display: inline-block; -webkit-transform: rotate(-25deg);}
     h1 .char2         {display: inline-block; -webkit-transform: rotate(30deg);}
@@ -53,94 +153,234 @@ footer {
     h1 .char5         {display: inline-block; -webkit-transform: rotate(-20deg);}
     h1 .char6         {display: inline-block; -webkit-transform: rotate(15deg);}
     h1 .char7         {display: inline-block; -webkit-transform: rotate(-20deg);}
-    h1 .char9         {display: inline-block; -webkit-transform: rotate(-25deg);}
-    h1 .char10         {display: inline-block; -webkit-transform: rotate(30deg);}
-    h1 .char11         {display: inline-block; -webkit-transform: rotate(-10deg);}
-    h1 .char12         {display: inline-block; -webkit-transform: rotate(15deg);}
-    h1 .char13        {display: inline-block; -webkit-transform: rotate(-20deg);}
-    h1 .char14         {display: inline-block; -webkit-transform: rotate(15deg);}
-    h1 .char15         {display: inline-block; -webkit-transform: rotate(-20deg);}
+
 
 
     h1 .char1:link    {color:white; background-color:transparent; text-decoration:none;}
     h1 .char1:visited {color:white; background-color:transparent; text-decoration:none;}
-    h1 .char1:hover   {color:purple; background-color:transparent; text-decoration:none;}
-    h1 .char1:active  {color:white; background-color:transparent; text-decoration:none;}
+    h1 .char1:hover   {color:purple; background-color:transparent; text-decoration:none; background-color: yellow;}
+    h1 .char1:active  {color:white; background-color:transparent; text-decoration:none; background-color: yellow;}
    
 
     h1 .char2:link    {color:white; background-color:transparent; text-decoration:none;}
     h1 .char2:visited {color:white; background-color:transparent; text-decoration:none;}
-    h1 .char2:hover   {color:aqua; background-color:transparent; text-decoration:none;}
-    h1 .char2:active  {color:white; background-color:transparent; text-decoration:none;}
+    h1 .char2:hover   {color:aqua; background-color:transparent; text-decoration:none; background-color: yellow;}
+    h1 .char2:active  {color:white; background-color:transparent; text-decoration:none; background-color: yellow;}
 
 
     h1 .char3:link    {color:white; background-color:transparent; text-decoration:none;}
     h1 .char3:visited {color:white; background-color:transparent; text-decoration:none;}
-    h1 .char3:hover   {color:green; background-color:transparent; text-decoration:none;}
-    h1 .char3:active  {color:white; background-color:transparent; text-decoration:none;}
+    h1 .char3:hover   {color:green; background-color:transparent; text-decoration:none; background-color: yellow;}
+    h1 .char3:active  {color:white; background-color:transparent; text-decoration:none; background-color: yellow;}
 
 
     h1 .char4:link    {color:white; background-color:transparent; text-decoration:none;}
     h1 .char4:visited {color:white; background-color:transparent; text-decoration:none;}
-    h1 .char4:hover   {color:grey; background-color:transparent; text-decoration:none;}
-    h1 .char4:active  {color:white; background-color:transparent; text-decoration:none;}
+    h1 .char4:hover   {color:grey; background-color:transparent; text-decoration:none; background-color: yellow;}
+    h1 .char4:active  {color:white; background-color:transparent; text-decoration:none; background-color: yellow;}
 
 
     h1 .char5:link    {color:white; background-color:transparent; text-decoration:none;}
     h1 .char5:visited {color:white; background-color:transparent; text-decoration:none;}
-    h1 .char5:hover   {color:orange; background-color:transparent; text-decoration:none;}
-    h1 .char5:active  {color:white; background-color:transparent; text-decoration:none;}
+    h1 .char5:hover   {color:orange; background-color:transparent; text-decoration:none; background-color: yellow;}
+    h1 .char5:active  {color:white; background-color:transparent; text-decoration:none; background-color: yellow;}
 
     h1 .char6:link    {color:white; background-color:transparent; text-decoration:none;}
     h1 .char6:visited {color:white; background-color:transparent; text-decoration:none;}
-    h1 .char6:hover   {color:purple; background-color:transparent; text-decoration:none;}
-    h1 .char6:active  {color:white; background-color:transparent; text-decoration:none;}
+    h1 .char6:hover   {color:purple; background-color:transparent; text-decoration:none; background-color: yellow;}
+    h1 .char6:active  {color:white; background-color:transparent; text-decoration:none; background-color: yellow;}
 
 
     h1 .char7:link    {color:white; background-color:transparent; text-decoration:none;}
     h1 .char7:visited {color:white; background-color:transparent; text-decoration:none;}
-    h1 .char7:hover   {color:aqua; background-color:transparent; text-decoration:none;}
-    h1 .char7:active  {color:white; background-color:transparent; text-decoration:none;}
+    h1 .char7:hover   {color:aqua; background-color:transparent; text-decoration:none; background-color: yellow;}
+    h1 .char7:active  {color:white; background-color:transparent; text-decoration:none; background-color: yellow;}
+
 
     h1 .char8:link    {color:white; background-color:transparent; text-decoration:none;}
     h1 .char8:visited {color:white; background-color:transparent; text-decoration:none;}
-    h1 .char8:hover   {color:purple; background-color:transparent; text-decoration:none;}
-    h1 .char8:active  {color:white; background-color:transparent; text-decoration:none;}
-   
+    h1 .char8:hover   {color:green; background-color:transparent; text-decoration:none; background-color: yellow;}
+    h1 .char8:active  {color:white; background-color:transparent; text-decoration:none; background-color: yellow;}
+
 
     h1 .char9:link    {color:white; background-color:transparent; text-decoration:none;}
     h1 .char9:visited {color:white; background-color:transparent; text-decoration:none;}
-    h1 .char9:hover   {color:aqua; background-color:transparent; text-decoration:none;}
-    h1 .char9:active  {color:white; background-color:transparent; text-decoration:none;}
-
-
-    h1 .char10:link    {color:white; background-color:transparent; text-decoration:none;}
-    h1 .char10:visited {color:white; background-color:transparent; text-decoration:none;}
-    h1 .char10:hover   {color:green; background-color:transparent; text-decoration:none;}
-    h1 .char10:active  {color:white; background-color:transparent; text-decoration:none;}
-
+    h1 .char9:hover   {color:grey; background-color:transparent; text-decoration:none; background-color: yellow;}
+    h1 .char9:active  {color:white; background-color:transparent; text-decoration:none; background-color: yellow;}
 
     h1 .char11:link    {color:white; background-color:transparent; text-decoration:none;}
     h1 .char11:visited {color:white; background-color:transparent; text-decoration:none;}
-    h1 .char11:hover   {color:grey; background-color:transparent; text-decoration:none;}
-    h1 .char11:active  {color:white; background-color:transparent; text-decoration:none;}
+    h1 .char11:hover   {color:orange; background-color:transparent; text-decoration:none; background-color: yellow;}
+    h1 .char11:active  {color:white; background-color:transparent; text-decoration:none; background-color: yellow;}
 
 
     h1 .char12:link    {color:white; background-color:transparent; text-decoration:none;}
     h1 .char12:visited {color:white; background-color:transparent; text-decoration:none;}
-    h1 .char12:hover   {color:orange; background-color:transparent; text-decoration:none;}
-    h1 .char12:active  {color:white; background-color:transparent; text-decoration:none;}
+    h1 .char12:hover   {color:purple; background-color:transparent; text-decoration:none; background-color: yellow;}
+    h1 .char12:active  {color:white; background-color:transparent; text-decoration:none; background-color: yellow;}
+
 
     h1 .char13:link    {color:white; background-color:transparent; text-decoration:none;}
     h1 .char13:visited {color:white; background-color:transparent; text-decoration:none;}
-    h1 .char13:hover   {color:purple; background-color:transparent; text-decoration:none;}
-    h1 .char13:active  {color:white; background-color:transparent; text-decoration:none;}
+    h1 .char13:hover   {color:aqua; background-color:transparent; text-decoration:none; background-color: yellow;}
+    h1 .char13:active  {color:white; background-color:transparent; text-decoration:none; background-color: yellow;}
 
 
-    h1 .char14:link    {color:white; background-color:transparent; text-decoration:none;}
-    h1 .char14:visited {color:white; background-color:transparent; text-decoration:none;}
-    h1 .char14:hover   {color:aqua; background-color:transparent; text-decoration:none;}
-    h1 .char14:active  {color:white; background-color:transparent; text-decoration:none;}
+
+
+.mitch_header2 {    
+    font-size:7em;
+    font-weight: bold;
+    padding-top:.5em; 
+    padding-bottom: .5em; 
+    text-align: center; 
+    color: white; 
+    text-shadow: 10px 2px red;
+    letter-spacing: 1em;
+}
+
+
+    h2 span{-webkit-transition: width 1s, height 1s, -webkit-transform 1s; /* Safari */
+    transition: width 1s, height 1s, transform 1s;}
+
+    h2 span:hover{    -webkit-transform: rotate(360deg); /* Safari */
+    transform: rotate(360deg);}
+
+    h2 .char1         {display: inline-block; -webkit-transform: rotate(-25deg);}
+    h2 .char2         {display: inline-block; -webkit-transform: rotate(30deg);}
+    h2 .char3         {display: inline-block; -webkit-transform: rotate(-10deg);}
+    h2 .char4         {display: inline-block; -webkit-transform: rotate(15deg);}
+    h2 .char5         {display: inline-block; -webkit-transform: rotate(-20deg);}
+    h2 .char6         {display: inline-block; -webkit-transform: rotate(15deg);}
+    h2 .char7         {display: inline-block; -webkit-transform: rotate(-20deg);}
+    h2 .char8         {display: inline-block; -webkit-transform: rotate(30deg);}
+    h2 .char9         {display: inline-block; -webkit-transform: rotate(-10deg);}
+    h2 .char10         {display: inline-block; -webkit-transform: rotate(15deg);}
+    h2 .char11         {display: inline-block; -webkit-transform: rotate(-20deg);}
+    h2 .char12         {display: inline-block; -webkit-transform: rotate(15deg);}
+    h2 .char13         {display: inline-block; -webkit-transform: rotate(-20deg);}   
+
+
+
+    h2 .char1:link    {color:white; background-color:transparent; text-decoration:none;}
+    h2 .char1:visited {color:white; background-color:transparent; text-decoration:none;}
+    h2 .char1:hover   {color:purple; background-color:transparent; text-decoration:none; background-color: yellow;}
+    h2 .char1:active  {color:white; background-color:transparent; text-decoration:none; background-color: yellow;}
+   
+
+    h2 .char2:link    {color:white; background-color:transparent; text-decoration:none;}
+    h2 .char2:visited {color:white; background-color:transparent; text-decoration:none;}
+    h2 .char2:hover   {color:aqua; background-color:transparent; text-decoration:none; background-color: yellow;}
+    h2 .char2:active  {color:white; background-color:transparent; text-decoration:none; background-color: yellow;}
+
+
+    h2 .char3:link    {color:white; background-color:transparent; text-decoration:none;}
+    h2 .char3:visited {color:white; background-color:transparent; text-decoration:none;}
+    h2 .char3:hover   {color:green; background-color:transparent; text-decoration:none; background-color: yellow;}
+    h2 .char3:active  {color:white; background-color:transparent; text-decoration:none; background-color: yellow;}
+
+
+    h2 .char4:link    {color:white; background-color:transparent; text-decoration:none;}
+    h2 .char4:visited {color:white; background-color:transparent; text-decoration:none;}
+    h2 .char4:hover   {color:grey; background-color:transparent; text-decoration:none; background-color: yellow;}
+    h2 .char4:active  {color:white; background-color:transparent; text-decoration:none; background-color: yellow;}
+
+
+    h2 .char5:link    {color:white; background-color:transparent; text-decoration:none;}
+    h2 .char5:visited {color:white; background-color:transparent; text-decoration:none;}
+    h2 .char5:hover   {color:orange; background-color:transparent; text-decoration:none; background-color: yellow;}
+    h2 .char5:active  {color:white; background-color:transparent; text-decoration:none; background-color: yellow;}
+
+    h2 .char6:link    {color:white; background-color:transparent; text-decoration:none;}
+    h2 .char6:visited {color:white; background-color:transparent; text-decoration:none;}
+    h2 .char6:hover   {color:purple; background-color:transparent; text-decoration:none; background-color: yellow;}
+    h2 .char6:active  {color:white; background-color:transparent; text-decoration:none; background-color: yellow;}
+
+
+    h2 .char7:link    {color:white; background-color:transparent; text-decoration:none;}
+    h2 .char7:visited {color:white; background-color:transparent; text-decoration:none;}
+    h2 .char7:hover   {color:aqua; background-color:transparent; text-decoration:none; background-color: yellow;}
+    h2 .char7:active  {color:white; background-color:transparent; text-decoration:none; background-color: yellow;}
+
+
+    h2 .char8:link    {color:white; background-color:transparent; text-decoration:none;}
+    h2 .char8:visited {color:white; background-color:transparent; text-decoration:none;}
+    h2 .char8:hover   {color:green; background-color:transparent; text-decoration:none; background-color: yellow;}
+    h2 .char8:active  {color:white; background-color:transparent; text-decoration:none; background-color: yellow;}
+
+
+    h2 .char9:link    {color:white; background-color:transparent; text-decoration:none;}
+    h2 .char9:visited {color:white; background-color:transparent; text-decoration:none;}
+    h2 .char9:hover   {color:grey; background-color:transparent; text-decoration:none; background-color: yellow;}
+    h2 .char9:active  {color:white; background-color:transparent; text-decoration:none; background-color: yellow;}
+
+
+    h2 .char10:link    {color:white; background-color:transparent; text-decoration:none;}
+    h2 .char10:visited {color:white; background-color:transparent; text-decoration:none;}
+    h2 .char10:hover   {color:orange; background-color:transparent; text-decoration:none; background-color: yellow;}
+    h2 .char10:active  {color:white; background-color:transparent; text-decoration:none; background-color: yellow;}
+
+
+    h2 .char11:link    {color:white; background-color:transparent; text-decoration:none;}
+    h2 .char11:visited {color:white; background-color:transparent; text-decoration:none;}
+    h2 .char11:hover   {color:grey; background-color:transparent; text-decoration:none; background-color: yellow;}
+    h2 .char11:active  {color:white; background-color:transparent; text-decoration:none; background-color: yellow;}
+
+
+    h2 .char12:link    {color:white; background-color:transparent; text-decoration:none;}
+    h2 .char12:visited {color:white; background-color:transparent; text-decoration:none;}
+    h2 .char12:hover   {color:orange; background-color:transparent; text-decoration:none; background-color: yellow;}
+    h2 .char12:active  {color:white; background-color:transparent; text-decoration:none; background-color: yellow;}
+
+    .music {    
+    font-size:5em;
+    font-weight: bold;
+    text-align: right; 
+    color: white; 
+    text-shadow: 10px 2px red;
+    position: fixed;
+
+}
+
+
+
+h6 .char1:hover   {color:purple; background-color:transparent; text-decoration:none;}
+   
+h6 .char2:hover   {color:aqua; background-color:transparent; text-decoration:none;}
+
+h6 .char3:hover   {color:green; background-color:transparent; text-decoration:none;}
+
+h6 .char4:hover   {color:grey; background-color:transparent; text-decoration:none;}
+
+h6 .char5:hover   {color:orange; background-color:transparent; text-decoration:none;}
+
+h6 .char6:hover   {color:purple; background-color:transparent; text-decoration:none;}
+
+h6 .char7:hover   {color:aqua; background-color:transparent; text-decoration:none;}
+
+h6 .char8:hover   {color:green; background-color:transparent; text-decoration:none;}
+   
+h6 .char9:hover   {color:grey; background-color:transparent; text-decoration:none;}
+
+h6 .char10:hover   {color:orange; background-color:transparent; text-decoration:none;}
+
+h6 .char11:hover   {color:purple; background-color:transparent; text-decoration:none;}
+
+h6 .char12:hover   {color:aqua; background-color:transparent; text-decoration:none;}
+
+h6 .char13:hover   {color:green; background-color:transparent; text-decoration:none;}
+
+
+.mitch_footer {    
+    font-size:1em;
+    font-weight: bold;
+    padding-top:1em; 
+    padding-bottom: .5em; 
+    text-align: center; 
+    color: white; 
+    text-shadow: 3px 2px red;
+    letter-spacing: 1em;}
+
 
     footer .char1:link    {color:white; background-color:transparent; text-decoration:none;}
     footer .char1:visited {color:white; background-color:transparent; text-decoration:none;}
@@ -224,105 +464,437 @@ footer {
 
     footer .char15:link    {color:white; background-color:transparent; text-decoration:none;}
     footer .char15:visited {color:white; background-color:transparent; text-decoration:none;}
-    footer .char15:hover   {color:orange; background-color:transparent; text-decoration:none;}
+    footer .char15:hover   {color:purple; background-color:transparent; text-decoration:none;}
     footer .char15:active  {color:white; background-color:transparent; text-decoration:none;}
+   
 
     footer .char16:link    {color:white; background-color:transparent; text-decoration:none;}
     footer .char16:visited {color:white; background-color:transparent; text-decoration:none;}
-    footer .char16:hover   {color:purple; background-color:transparent; text-decoration:none;}
+    footer .char16:hover   {color:aqua; background-color:transparent; text-decoration:none;}
     footer .char16:active  {color:white; background-color:transparent; text-decoration:none;}
 
 
     footer .char17:link    {color:white; background-color:transparent; text-decoration:none;}
     footer .char17:visited {color:white; background-color:transparent; text-decoration:none;}
-    footer .char17:hover   {color:aqua; background-color:transparent; text-decoration:none;}
+    footer .char17:hover   {color:green; background-color:transparent; text-decoration:none;}
     footer .char17:active  {color:white; background-color:transparent; text-decoration:none;}
+
 
     footer .char18:link    {color:white; background-color:transparent; text-decoration:none;}
     footer .char18:visited {color:white; background-color:transparent; text-decoration:none;}
-    footer .char18:hover   {color:purple; background-color:transparent; text-decoration:none;}
+    footer .char18:hover   {color:grey; background-color:transparent; text-decoration:none;}
     footer .char18:active  {color:white; background-color:transparent; text-decoration:none;}
-   
+
 
     footer .char19:link    {color:white; background-color:transparent; text-decoration:none;}
     footer .char19:visited {color:white; background-color:transparent; text-decoration:none;}
-    footer .char19:hover   {color:aqua; background-color:transparent; text-decoration:none;}
+    footer .char19:hover   {color:orange; background-color:transparent; text-decoration:none;}
     footer .char19:active  {color:white; background-color:transparent; text-decoration:none;}
-
 
     footer .char20:link    {color:white; background-color:transparent; text-decoration:none;}
     footer .char20:visited {color:white; background-color:transparent; text-decoration:none;}
-    footer .char20:hover   {color:green; background-color:transparent; text-decoration:none;}
+    footer .char20:hover   {color:purple; background-color:transparent; text-decoration:none;}
     footer .char20:active  {color:white; background-color:transparent; text-decoration:none;}
 
 
     footer .char21:link    {color:white; background-color:transparent; text-decoration:none;}
     footer .char21:visited {color:white; background-color:transparent; text-decoration:none;}
-    footer .char21:hover   {color:grey; background-color:transparent; text-decoration:none;}
+    footer .char21:hover   {color:aqua; background-color:transparent; text-decoration:none;}
     footer .char21:active  {color:white; background-color:transparent; text-decoration:none;}
 
-
-    footer .char22:link    {color:white; background-color:transparent; text-decoration:none;}
-    footer .char22:visited {color:white; background-color:transparent; text-decoration:none;}
-    footer .char22:hover   {color:orange; background-color:transparent; text-decoration:none;}
-    footer .char22:active  {color:white; background-color:transparent; text-decoration:none;}
-
-    footer .char23:link    {color:white; background-color:transparent; text-decoration:none;}
-    footer .char23:visited {color:white; background-color:transparent; text-decoration:none;}
-    footer .char23:hover   {color:purple; background-color:transparent; text-decoration:none;}
-    footer .char23:active  {color:white; background-color:transparent; text-decoration:none;}
+/*music stuff*/
 
 
-    footer .char24:link    {color:white; background-color:transparent; text-decoration:none;}
-    footer .char24:visited {color:white; background-color:transparent; text-decoration:none;}
-    footer .char24:hover   {color:aqua; background-color:transparent; text-decoration:none;}
-    footer .char24:active  {color:white; background-color:transparent; text-decoration:none;}
+ul {
+    list-style-type: none;
+    width: 30%;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    margin-left: -6em;
+    padding-top: 5%;
+    font-weight: bold;
 
 
-/*iphone */
-@media only screen and (max-width: 1336px) {
-.mitch_header 
-    {font-size: 10em;
-    letter-spacing: .3em;
-}
 }
 
-/*iphone */
-@media only screen and (max-width: 1234px) {
-.mitch_header 
-    {font-size: 7em;
-    letter-spacing: .3em;
-}
-}
 
-/*iphone */
-@media only screen and (max-width: 1024px) {
-.mitch_header 
-    {font-size: 7em;
-    letter-spacing: .2em;
-}
-}
-
-/*iphone */
-@media only screen and (max-width: 414px) {
-.mitch_header 
-    {font-size: 3em;
-    letter-spacing: .2em;
-}
-}
-
-/*iphone */
-@media only screen and (max-width: 375px) {
-.mitch_header 
-    {font-size: 2em;
+li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+    font-size:1.5em;
+    text-align:left; 
+    color: white; 
+    text-shadow: 1px 2px red;
     letter-spacing: .1em;
-}
+    padding-left: 1em;
+    
 }
 
-/*iphone */
-@media only screen and (max-width: 414px) {
-.mitch_header 
-    {font-size: 3em;
-    letter-spacing: .2em;
+li a.active {
+    background-color: transparent;
+    color: white;
+    text-decoration: none;
+
 }
+
+li a:hover:not(.active) {
+  
+    border-radius: 25px;
+    color: white;
+    width: 100%;
+    text-decoration: none;
+      /* on hover - scale to this x,y size */
+    transform: scale(1.15,1.15);
+      /* property values: name, duration, iteration, timing-function */
+    animation: jiggle 1s infinite linear;
 }
+
+.jig {
+     animation: jiggle 2s infinite linear;
+}
+@keyframes jiggle {
+  /* start at 0deg and this scale size.
+     scale size is repeated here to maintain smooth scaling */
+  0% {transform: rotate(0deg) scale(1.15,1.15);}
+  /* midway rotate 2deg right */
+  50% {transform: rotate(2deg) scale(1.15,1.15);}
+  /* end rotate -2deg left */
+  100% {transform: rotate(-2deg) scale(1.15,1.15)}
+}
+
+@keyframes jiggl {
+  /* start at 0deg and this scale size.
+     scale size is repeated here to maintain smooth scaling */
+  20% {transform: rotate(-1deg) scale(1.15,1.15);}
+
+  /* midway rotate 2deg right */
+  20% {transform: rotate(1deg) scale(1.15,1.15);}
+  /* end rotate -2deg left */
+  100% {transform: rotate(-1deg) scale(1.15,1.15)}
+}
+
+
+/*events*/
+#table-wrapper {
+  position:relative;
+}
+#table-scroll {
+  height:100%;
+  overflow:auto;  
+  margin-top:20px;
+}
+#table-wrapper table {
+  width:100%;
+
+}
+
+.box2 {
+    border: 1px solid aqua;
+     position: relative; 
+
+     font-size: 2em; 
+     text-align: left; 
+     width: 60%; 
+     height: 40%
+}
+
+
+
+
+/*gallery shit*/
+#panel {
+    border: 0px solid rgb(200, 200, 200);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 5px 2px;
+    border-radius: 4px;
+    top: 50px;
+}
+
+
+/*tilt.js*/
+.inner {
+    transform: translateZ(20px)
+}
+
+.outer {
+    transform-style: preserve-3d
+}
+
+
+/*buttons*/
+
+    .filter-button {
+        background-color: transparent;
+
+        border: none;
+        font-weight: bold;
+        color: white; 
+        font-size: 12px; 
+        text-shadow: 3px 2px red; 
+        letter-spacing: .5em; 
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        margin: 4px 2px;
+        cursor: pointer;
+    }
+
+    .filter-button:hover {
+
+                background-image: url(images/gif6.gif);
+        color: red; 
+        font-size: 16px; 
+        text-shadow: 3px 2px white; 
+        letter-spacing: .5em;
+}
+
+    #Img {
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.3s;
+        box-shadow: none;
+    }
+
+    #Img:hover {opacity: 0.7;}
+
+
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.1); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 100%;
+
+
+}
+
+
+
+.modal-header {
+    display: none;
+}
+
+.modal-body {
+    background-color: rgba(1,0,0,0.1);
+}
+
+.modal-footer {
+    background-color: rgba(1,0,0,0.1);
+}
+/* Caption of Modal Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {    
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    } }
+
+
+/* Contact Form Styles */
+
+}
+#contact-form {
+   background-color: transparent;
+   width:auto;
+   height: 400px;
+   position: absolute;
+   border-radius:7px;
+   -webkit-border-radius:7px;
+   -moz-border-radius:7px;
+
+}
+
+#contact-form input,   
+#contact-form select,   
+#contact-form textarea,   
+#contact-form label { 
+   font-size: 15px;  
+   margin-bottom: 2px;
+   font-family: Arial, san-serif;
+
+} 
+#contact-form input,   
+#contact-form select,   
+#contact-form textarea { 
+   width:100%;
+   background: #fff;
+   border: 0; 
+   -moz-border-radius: 4px;  
+   -webkit-border-radius: 4px;  
+   border-radius: 4px;
+   margin-bottom: 25px;  
+   padding: 5px;  
+
+}  
+#contact-form input:focus,   
+#contact-form select:focus,   
+#contact-form textarea:focus {  
+   background-color: transparent; 
+}  
+#contact-form textarea {
+   width:100%;
+   height: 100%;
+}
+#contact-form button[type="submit"] {
+   cursor:cell;
+   width:65%;
+   border:none;
+   background:transparent;
+   background-image:linear-gradient(bottom, #8C1C50 0%, #991D57 52%);
+   background-image:-moz-linear-gradient(bottom, #8C1C50 0%, #991D57 52%);
+   background-image:-webkit-linear-gradient(bottom, #8C1C50 0%, #991D57 52%);
+   color:aqua;
+   margin:0 0 5px;
+   padding:10px;
+   border-radius:5px;
+
+}
+#contact-form button[type="submit"]:hover {
+   background-image:linear-gradient(bottom, #9C215A 0%, #A82767 52%);
+   background-image:-moz-linear-gradient(bottom, #9C215A 0%, #A82767 52%);
+   background-image:-webkit-linear-gradient(bottom, #9C215A 0%, #A82767 52%);
+   -webkit-transition:background 0.3s ease-in-out;
+   -moz-transition:background 0.3s ease-in-out;
+   transition:background-color 0.3s ease-in-out;
+}
+#contact-form button[type="submit"]:active {
+   box-shadow:inset 0 1px 3px rgba(0,0,0,0.5);
+}
+input:required, textarea:required {  
+   box-shadow: none;
+   -moz-box-shadow: none;  
+   -webkit-box-shadow: none;  
+   -o-box-shadow: none;  
+} 
+#contact-form .required {  
+   font-weight:bold;  
+   color: white;   
+   text-shadow: 3px 1px red   
+}
+
+div.a {
+width: 50px;
+height:50px;
+ background-color:red;
+position:fixed;
+    
+}
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes example {
+    0%   {left:0px;}
+    50%  {left:200px;}
+    50%  {left:400px;}
+    75%  {left:200px;}
+    100%  {left:0px;}
+
+}
+
+/* Standard syntax */
+@keyframes example {
+    0%   {left:0px;}
+    50%  {left:200px;}
+    50%  {left:400px;}
+    75%  {left:200px;}
+    100%  {left:0px;}
+}
+/* Hide success/failure message
+   (especially since the php is missing) */
+#failure, #success {
+   color: #6EA070; 
+   display:none;  
+}
+
+textarea#message {
+    height: 100px;}
+
+/* Make form look nice on smaller screens */
+@media only screen and (max-width: 580px) {
+   #contact-form{
+      left: 3%;
+      margin-right: 3%;
+      width: 88%;
+      margin-left: 0;
+      padding-left: 3%;
+      padding-right: 3%;
+   }
+}
+
+.hide {
+    display: none;
+}
+
+.contact {
+    background: repeating-linear-gradient(45deg, #606dbc, #606dbc 1px, #465298 1px, #465298 5px);
+    height: 300px;
+    border:1px solid aqua; 
+    padding: 2em; 
+    box-shadow: 20px 20px 10px grey;}
+}
+
+
+.rotate:hover {-webkit-transform: rotate(180deg); /* Safari */
+    transform: rotate(180deg);}
