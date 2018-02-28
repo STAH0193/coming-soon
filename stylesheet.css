@@ -89,7 +89,7 @@ background-size: contain;
 }
 
 .floats {
-  animation: MoveUpDown 60s linear infinite;
+  animation: MoveUpDown 500s linear infinite;
   position: absolute;
   left: 0;
   bottom: 0;
@@ -101,7 +101,7 @@ background-size: contain;
     bottom: 0px;
   }
   50% {
-    bottom: 500px;
+    bottom: 5000px;
   }
   100% {
     bottom: 0px;
