@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-  
+
   <head>
     <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>gallery</title>
         <link rel="stylesheet" type="text/css" href="stylesheet.css">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-          <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
-          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
           <script src="js/jquery.lettering.js" type="text/javascript"></script>
 
             <script>
@@ -17,293 +18,93 @@
                   $(".mitch_header").lettering();
                   $(".mitch_footer").lettering();
 
-                  $(".filter-button").click(function(){
-                      var value = $(this).attr('data-filter');
-                      
-                      if(value == "all")
-                      {
-                          //$('.filter').removeClass('hidden');
-                          $('.filter').show('1000');
-                      }
-                      else
-                      {
-              //            $('.filter[filter-item="'+value+'"]').removeClass('hidden');
-              //            $(".filter").not('.filter[filter-item="'+value+'"]').addClass('hidden');
-                          $(".filter").not('.'+value).hide('3000');
-                          $('.filter').filter('.'+value).show('3000');}
                       });
-    
-                          if ($(".filter-button").removeClass("active")) {
-                      $(this).removeClass("active");
-                      }
-                      $(this).addClass("active");
+            </script>
 
-                      });
 
-            </script>   
   </head>
 
 <body>
 
-<div style="margin-top:-2%; background-image: url(images/gif7.gif); background-size: cover; background-position: center;">
 
-        <div align="center">
-  <a href="index.html"><h1 class="mitch_header" style=" padding-left: 1em;text-align: center; font-size: 3em;">gallery</h1></a>
-           <div style="padding-bottom: 1em;"> <button class="filter-button" data-filter="all">all</button>
-            <button class="filter-button" data-filter="aa">album art</button>
-            <button class="filter-button" data-filter="p">poster</button>
-            <button class="filter-button" data-filter="dp">digital</button></div>
+<div id="shapes">
+
+<div class="container" style="margin-top:10%;">
+
+      <div class="row">
+        <div class="col-md-3" style="margin-top:10%;">
+          <a href="index.html"><h1 class="mitch_header" style="text-align: center; font-size: 1.5em;">media</h1></a>
+          <a href="index.html"><h1 class="mitch_header" style="text-align: Center; font-size: 1.5em;">by</h1></a>
+          <a href="index.html"><h1 class="mitch_header" style="text-align: Center; font-size: 1.5em;">mitch</h1></a>
         </div>
 
-<div class="container"><div style="padding-top: 1em;  -webkit-border-radius: 10px; ">
-	<div class="row">
+        <div class="col-md-4">
+        <iframe src="https://player.vimeo.com/video/239277186" width="350" height="350" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="box-shadow:10px 10px 100px 25px darkblue;"></iframe>
+        </div>
 
-  <div class="home col-lg-4 col-md-4 col-sm-4 col-xs-12 filter aa">
-  <a style='background-color: transparent; border:none;' id="Img" class="thumbnail" href="#" data-image-id="" data-toggle="modal"  data-caption="Stahlmann&Sands : album art - 2017" data-image="images/S&S.jpg" data-target="#image-gallery" >
-        <img class="img-responsive" src="images/S&S.jpg" alt="" width="288">
-            </a>
-            </div>
-      
-<div class="home col-lg-4 col-md-4 col-sm-4 col-xs-12 filter aa">
-  <a style='background-color: transparent; border:none;' id="Img" class="thumbnail" href="#" data-image-id="" data-toggle="modal"  data-caption="Stahlmann&Sands : alternative album art - 2017" data-image="images/stahlmannsands.jpg" data-target="#image-gallery" >
-  <img class="img-responsive" id="Img" src="images/stahlmannsands.jpg" alt="" width="288">
-  </a>
-  </div>
+        <div class="col-md-4 offset-md-1" style="padding-top: 10%;">
+        <iframe style="box-shadow:10px 10px 100px 25px red; border: 0; width: 350px; height: 350px;" src="https://bandcamp.com/EmbeddedPlayer/album=4265356822/size=large/bgcol=ffffff/linkcol=0687f5/minimal=true/transparent=true/" seamless><a href="http://stahlmannsands.bandcamp.com/album/1">1 by Stahlmann &amp; Sands</a></iframe>
+        </div>
+      </div>
 
-<div class="home col-lg-4 col-md-4 col-sm-4 col-xs-12 filter aa">
-  <a style='background-color: transparent; border:none;' id="Img" class="thumbnail" href="#" data-image-id="" data-toggle="modal"  data-caption="Black Market Brass : cassette sleeve - 2016" data-image="images/5c.jpg" data-target="#image-gallery" >
-  <img class="img-responsive" id="Img" src="images/5c.jpg" alt="" width="288">
-  </a>
-  </div>
-
-  </div>
-
-  <div class="row">
-
-<div class="home col-lg-4 col-md-4 col-sm-4 col-xs-12 filter aa">
-  <a style='background-color: transparent; border:none;' id="Img" class="thumbnail" href="#" data-image-id="" data-toggle="modal"  data-caption="Field Rec. (a side) : album art - 2015" data-image="images/side a.jpg" data-target="#image-gallery" >
-  <img class="img-responsive" id="Img" src="images/side a.jpg" alt="" width="288">
-  </a>
-  </div>
-
-<div class="home col-lg-4 col-md-4 col-sm-4 col-xs-12 filter selfie">
-  <a style='background-color: transparent; border:none;' id="Img" class="thumbnail" href="#" data-image-id="" data-toggle="modal"  data-caption="hihi : selfie - 2017" data-image="images/animated.gif" data-target="#image-gallery" >
-  <img class="img-responsive" id="Img" src="images/animated.gif" alt="" width="288">
-  </a>
-  </div>
-
-<div class="home col-lg-4 col-md-4 col-sm-4 col-xs-12 filter aa">
-  <a style='background-color: transparent; border:none;' id="Img" class="thumbnail" href="#" data-image-id="" data-toggle="modal"  data-caption="Field Rec. (b side) : album art - 2015" data-image="images/side b.jpg" data-target="#image-gallery" >
-  <img class="img-responsive" id="Img" src="images/side b.jpg" alt="" width="288">
-  </a>
-  </div>
-
-</div>
-<div class="row">
-<div class="home col-lg-4 col-md-4 col-sm-4 col-xs-12 filter aa">
-  <a style='background-color: transparent; border:none;' id="Img" class="thumbnail" href="#" data-image-id="" data-toggle="modal"  data-caption="Art for Action : cassette sleeve - 2016" data-image="images/blmfinal.jpg" data-target="#image-gallery" >
-  <img class="img-responsive" id="Img" src="images/blmfinal.jpg" alt="" width="288">
-  </a>
-  </div>
-
-<div class="home col-lg-4 col-md-4 col-sm-4 col-xs-12 filter aa">
-  <a style='background-color: transparent; border:none;' id="Img" class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-caption="Field Rec. : cassette sleeve - 2015" data-image="images/sleeve short.jpg" data-target="#image-gallery" >
-  <img class="img-responsive" id="Img" src="images/sleeve short.jpg" alt="" width="288">
-  </a>
-  </div>
-
-<div class="home col-lg-4 col-md-4 col-sm-4 col-xs-12 filter aa">
-  <a style='background-color: transparent; border:none;' id="Img" class="thumbnail" href="#" data-image-id="" data-toggle="modal"  data-caption="AmericanSpanish : album art - 2014" data-image="images/americanspanish.jpg" data-target="#image-gallery" >
-  <img class="img-responsive" id="Img" src="images/americanspanish.jpg" alt="" width="288">
-  </a>
-  </div>
-  </div>
-  <div class="row">
-
-<div class="home col-lg-4 col-md-4 col-sm-4 col-xs-12 filter dp">
-  <a style='background-color: transparent; border:none;' id="Img" class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="" data-caption="Map 10 : digital print - 2014" data-image="images/map 10.jpg" data-target="#image-gallery" >
-  <img class="img-responsive" id="Img" src="images/map 10.jpg" alt="" width="288">
-  </a>
-  </div>
+      <div class="row">
+        <div class="col-md-4">
+          <iframe src="https://player.vimeo.com/video/224983816" width="350" height="350" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="box-shadow:10px 10px 100px 25px purple;"></iframe>
+        </div>
+          <div class="col-md-8" style="padding-left:5%;">
+            <img src="images/jelly-bean2.gif" style="height: 350px; width:700px;">
+          </div>
+      </div>
 
 
-<div class="home col-lg-4 col-md-4 col-sm-4 col-xs-12 filter dp">
-  <a style='background-color: transparent; border:none;' id="Img" class="thumbnail" href="#" data-image-id="" data-toggle="modal"  data-caption=" Map 3 : digital print - 2014" data-image="images/flag 3.jpg" data-target="#image-gallery" >
-  <img class="img-responsive" id="Img" src="images/flag 3.jpg" alt="" width="288">
-  </a>
-  </div>
+      <div class="row" style="padding-top: 10%;">
 
-<div class="home col-lg-4 col-md-4 col-sm-4 col-xs-12 filter dp">
-  <a style='background-color: transparent; border:none;' id="Img" class="thumbnail" href="#" data-image-id="" data-toggle="modal"  data-caption="Map 4 : digital print - 2014" data-image="images/map 4.jpg" data-target="#image-gallery" >
-  <img class="img-responsive" id="Img" src="images/map 4.jpg" alt="" width="288">
-  </a>
-  </div>
-  </div>
+          <div class="col-md-8">
+            <img src="images/shape3.png" style="height: auto; width:500px;">
+          </div>
 
-  <div class="row">
-  <div class="home col-lg-4 col-md-4 col-sm-4 col-xs-12 filter dp">
-  <a style='background-color: transparent; border:none;' id="Img" class="thumbnail" href="#" data-image-id="" data-toggle="modal"  data-caption="pyramid shape : digital print - 2014" data-image="images/pyramid a.jpg" data-target="#image-gallery" >
-  <img class="img-responsive" id="Img" src="images/pyramid a.jpg" alt="" width="288">
-  </a>
-  </div>
-
-  
-
-    <div class="home col-lg-4 col-md-4 col-sm-4 col-xs-12 filter dp">
-  <a style='background-color: transparent; border:none;' id="Img" class="thumbnail" href="#" data-image-id="" data-toggle="modal"  data-caption="just mitch : digital print - 2014" data-image="images/just mitch.jpg" data-target="#image-gallery" >
-  <img class="img-responsive" id="Img" src="images/just mitch.jpg" alt="" width="288">
-  </a>
-  </div>
- 
+      <div class="col-md-4">
+        <iframe style="border: 0; width: 350px; height: 350px; box-shadow:10px 10px 100px 25px darkblue;" src="https://bandcamp.com/EmbeddedPlayer/album=4199799509/size=large/bgcol=ffffff/linkcol=0687f5/minimal=true/transparent=true/" seamless><a href="http://sixfamilies.bandcamp.com/album/field-rec-history-a-poem-as-process">FIELD REC &amp; History: a poem as process by Mitch Stahlmann // Noah Ophoven-Baldwin</a></iframe>
+      </div>
+    </div>
 
 
-  <div class="home col-lg-4 col-md-4 col-sm-4 col-xs-12 filter dp">
-  <a style='background-color: transparent; border:none;' id="Img" class="thumbnail" href="#" data-image-id="" data-toggle="modal"  data-caption="pyramid shape : digital print - 2014" data-image="images/pyramid b.jpg" data-target="#image-gallery" >
-  <img class="img-responsive" id="Img" src="images/pyramid b.jpg" alt="" width="288">
-  </a>
-  </div>
-  </div>
-  <div class="row">
+    <div class="row">
+
+        <div class="col-md-4">
+          <iframe style="box-shadow:10px 10px 100px 25px red; border: 0; width: 350px; height: 350px;" src="https://bandcamp.com/EmbeddedPlayer/track=939861532/size=large/bgcol=ffffff/linkcol=0687f5/minimal=true/transparent=true/" seamless><a href="http://minneapoliselectriccompany.bandcamp.com/track/field-rec-b">FIELD REC. (B) by Minneapolis Electric Company</a></iframe>
+        </div>
+
+        <div class="col-md-4 offset-md-2" style="padding-top: 10%;">
+          <iframe src="https://player.vimeo.com/video/253719762" width="350" height="350" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="box-shadow:10px 10px 100px 25px green;"></iframe>
+        </div>
+
+        <div class="col-md-1 offset-md-1">
 
 
-<div class="home col-lg-4 col-md-4 col-sm-4 col-xs-12 filter p">
-  <a style='background-color: transparent; border:none;' id="Img" class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-caption="TINKER FEST : poster - 2016" data-image="images/tinkerfest poster.jpg" data-target="#image-gallery" >
-  <img class="img-responsive" id="Img" src="images/tinkerfest poster.jpg" alt="" width="288">
-  </a>
-  </div>
-
-<div class="home col-lg-4 col-md-4 col-sm-4 col-xs-12 filter p">
-  <a style='background-color: transparent; border:none;' id="Img" class="thumbnail" href="#" data-image-id="" data-toggle="modal"  data-caption="Field Rec. tape release : poster - 2015" data-image="images/MEC poster.jpg" data-target="#image-gallery" >
-  <img class="img-responsive" id="Img" src="images/MEC poster.jpg" alt="" width="288">
-  </a>
-  </div>
-
-<div class="home col-lg-4 col-md-4 col-sm-4 col-xs-12 filter p">
-  <a style='background-color: transparent; border:none;' id="Img" class="thumbnail" href="#" data-image-id="" data-toggle="modal"  data-caption="Circtuit to Circtuit : poster - 2015" data-image="images/c2c.jpg" data-target="#image-gallery" >
-  <img class="img-responsive" id="Img" src="images/c2c.jpg" alt="" width="288">
-  </a>
-  </div>
-  </div>
-  <div class="row">
-
-<div class="home col-lg-4 col-md-4 col-sm-4 col-xs-12 filter dp">
-  <a style='background-color: transparent; border:none;' id="Img" class="thumbnail" href="#" data-image-id="" data-toggle="modal"  data-caption="GetFreeWiFi 1 : digital print - 2017" data-image="images/3.jpg" data-target="#image-gallery" >
-  <img class="img-responsive" id="Img" src="images/3.jpg" alt="" width="288">
-  </a>
-  </div>
-
-<div class="home col-lg-4 col-md-4 col-sm-4 col-xs-12 filter dp">
-  <a style='background-color: transparent; border:none;' id="Img" class="thumbnail" href="#" data-image-id="" data-toggle="modal"  data-caption="GetFreeWiFi 3 : digital print - 2017" data-image="images/9.jpg" data-target="#image-gallery" >
-  <img class="img-responsive" id="Img" src="images/9.jpg" alt="" width="288">
-  </a>
-  </div>
-
-<div class="home col-lg-4 col-md-4 col-sm-4 col-xs-12 filter dp">
-  <a style='background-color: transparent; border:none;' id="Img" class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-caption="GetFreeWiFi 2 : digital print - 2017" data-image="images/2.jpg" data-target="#image-gallery" >
-  <img class="img-responsive" id="Img" src="images/2.jpg" alt="" width="288">
-  </a>
-  </div>
-
-</div>
-
-</div>
-
-<div class="modal fade" id="image-gallery" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
-                <h4 class="modal-title" id="image-gallery-title"></h4>
-            </div>
-            <div class="modal-body">
-                <img id="image-gallery-image" class="img-responsive" src="">
-            </div>
-            <div class="modal-footer">
-
-                <div class="col-md-2">
-                    <button type="button" class="btn btn-primary" id="show-previous-image">Previous</button>
-                </div>
-
-                <div class="col-md-8 text-justify" id="image-gallery-caption">
-
-                </div>
-
-                <div class="col-md-2">
-                    <button type="button" id="show-next-image" class="btn btn-default">Next</button>
-                </div>
-            </div>
         </div>
     </div>
+
+
+<div class="row" style="padding-top: 5%;">
+    <div class="col-md-4">
+       <iframe src="https://player.vimeo.com/video/223987894" width="350" height="350" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="box-shadow:10px 10px 100px 25px aqua;"></iframe>
+     </div>
+
+     <div class="col-md-4 offset-md-3" style="padding-top: 10%;">
+       <iframe style="border: 0; width: 350px; height: 350px; box-shadow:10px 10px 100px 25px darkblue;" src="https://bandcamp.com/EmbeddedPlayer/track=75425330/size=large/bgcol=ffffff/linkcol=0687f5/minimal=true/transparent=true/" seamless><a href="http://minneapoliselectriccompany.bandcamp.com/track/field-rec-a">FIELD REC. (A) by Minneapolis Electric Company</a></iframe>
+     </div>
+
+     <div class="col-md-1">
+
+
+
+   </div>
+
 </div>
 </div>
-
-  <footer class="footer_text">©2017 Mitch Stahlmann</footer>
-
-
-<section>
-
-  <script>
-$(document).ready(function(){
-
-    loadGallery(true, 'a.thumbnail');
-
-    //This function disables buttons when needed
-    function disableButtons(counter_max, counter_current){
-        $('#show-previous-image, #show-next-image').show();
-        if(counter_max == counter_current){
-            $('#show-next-image').hide();
-        } else if (counter_current == 1){
-            $('#show-previous-image').hide();
-        }
-    }
-
-    /**
-     *
-     * @param setIDs        Sets IDs when DOM is loaded. If using a PHP counter, set to false.
-     * @param setClickAttr  Sets the attribute for the click handler.
-     */
-
-    function loadGallery(setIDs, setClickAttr){
-        var current_image,
-            selector,
-            counter = 0;
-
-        $('#show-next-image, #show-previous-image').click(function(){
-            if($(this).attr('id') == 'show-previous-image'){
-                current_image--;
-            } else {
-                current_image++;
-            }
-
-            selector = $('[data-image-id="' + current_image + '"]');
-            updateGallery(selector);
-        });
-
-        function updateGallery(selector) {
-            var $sel = selector;
-            current_image = $sel.data('image-id');
-            $('#image-gallery-caption').text($sel.data('caption'));
-            $('#image-gallery-title').text($sel.data('title'));
-            $('#image-gallery-image').attr('src', $sel.data('image'));
-            disableButtons(counter, $sel.data('image-id'));
-        }
-
-        if(setIDs == true){
-            $('[data-image-id]').each(function(){
-                counter++;
-                $(this).attr('data-image-id',counter);
-            });
-        }
-        $(setClickAttr).on('click',function(){
-            updateGallery($(this));
-        });
-    }
-});
-  </script> 
-
-
-</section>
-
+</div>
+  <footer style="padding-top:15%;" class="footer_text">©2017 Mitch Stahlmann</footer>
 
 
 			</body>
