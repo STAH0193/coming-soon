@@ -109,24 +109,44 @@ background-size: contain;
 }
 
 .floats2 {
-  animation: MoveUpDown2 60s linear infinite;
+  animation: MoveUpDown2 120s linear infinite;
   position: absolute;
-  left: 0;
-  bottom: 0;
+	float: bottom;
 	z-index: -2;
 }
 
 @keyframes MoveUpDown2 {
   0% {
-    bottom: 0px;
+    bottom: -1000px;
   }
   50% {
-    bottom: 500px;
-  }
-  100% {
     bottom: 0px;
   }
+  100% {
+    bottom: -1000px;
+  }
 }
+
+.floats3 {
+  animation: MoveUpDown3 120s linear infinite;
+  position: absolute;
+	float: bottom;
+	z-index: -2;
+	padding-left: 30%;
+}
+
+@keyframes MoveUpDown3 {
+  0% {
+    bottom: 0;
+  }
+  50% {
+    bottom: 1000px;
+  }
+  100% {
+    bottom: 0;
+  }
+}
+
 
 #imghov1 {
 	padding: 0 !important;
@@ -344,10 +364,8 @@ display: none;
 .mitch_header {
     font-size:7em;
     font-weight: bold;
-    padding-top:.5em;
-    padding-bottom: .5em;
     text-align: center;
-		margin-left: 5%;
+
     color: white;
     text-shadow: 10px 2px red;
     letter-spacing: 1em;
