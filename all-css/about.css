@@ -1,0 +1,32 @@
+.about-container {
+  width: 100%;
+}
+
+.about-font-style--big {
+  font-size: 28px;
+  text-shadow: 5px 2px pink;
+  color: purple;
+}
+
+.about-font-style--small {
+   color: purple;
+   font-size: 24px;
+   text-shadow: 3px 2px pink;
+}
+
+.about-font-style--big-m {
+  font-size: 32px;
+  text-shadow: 5px 2px pink;
+  color: purple;
+}
+
+.about-font-style--small-m {
+  font-size: 22px;
+  text-shadow: 5px 2px pink;
+  color: purple;
+}
+
+.about-img-home {
+  Width: 200px;
+  height: auto;
+}

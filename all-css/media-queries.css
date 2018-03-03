@@ -1,0 +1,48 @@
+@media only screen and (max-width: 767px) {
+  .mitch-header {
+    font-size: 7em;
+    letter-spacing: 10px;
+  }
+  .index-about {
+    box-shadow:10px 10px 1000px 25px green;
+  }
+
+  .index-events {
+  	box-shadow:10px 10px 1000px 25px purple;
+  }
+
+  .index-media {
+  	box-shadow:10px 10px 1000px 25px red;
+  }
+
+  .index-contact {
+  	box-shadow:10px 10px 1000px 25px orange;
+  }
+
+  .media-header {
+  font-size: 7em;
+  }
+
+  .media-images--jellybean3D {
+    display: none;
+  }
+
+  .media-images--shape33 {
+    display: none;
+  }
+
+  .media-header {
+    font-size: 5em;
+    margin-top: 5%;
+  }
+}
+
+@media only screen and (max-width: 342px) {
+  .mitch-header {
+    font-size: 7em;
+    letter-spacing: 5px;
+
+  }
+
+
+}
