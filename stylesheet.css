@@ -191,21 +191,6 @@ li a:hover:not(.active) {
   100% {transform: rotate(-1deg) scale(1.15,1.15)}
 }
 
-
-/*events*/
-#table-wrapper {
-  position:relative;
-}
-#table-scroll {
-  height:100%;
-  overflow:auto;
-  margin-top:20px;
-}
-#table-wrapper table {
-  width:100%;
-
-}
-
 /*tilt.js*/
 .inner {
     transform: translateZ(20px)
@@ -218,8 +203,9 @@ li a:hover:not(.active) {
 .events-table{
 	width: 65%;
 	font-size: 2em;
-	align-content: center;
+	margin: auto;
 }
+
 
 .rotate:hover {-webkit-transform: rotate(180deg); /* Safari */
     transform: rotate(180deg);}

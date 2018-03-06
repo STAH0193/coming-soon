@@ -9,6 +9,10 @@
     letter-spacing: 1em;
 }
 
+.events-header {
+	letter-spacing: 20px;
+}
+
 .contact-header {
     font-size:5em;
     font-weight: bold;
@@ -67,7 +71,7 @@ a.teal { color: #4ac0aa;  background-color:transparent; text-decoration:none; te
 a.violet { color: aqua;  background-color:transparent; text-decoration:none; text-shadow: 5px 3px white}
 a.pink { color: #d529cd;  background-color:transparent; text-decoration:none; text-shadow: 5px 3px white}
 
-a.one {color: pink; text-shadow: 5px 3px white}
+a.one {color: pink; text-shadow: 5px 3px white; text-decoration: none;}
 
 
 
