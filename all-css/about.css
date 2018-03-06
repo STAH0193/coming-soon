@@ -1,32 +1,47 @@
-.about-container {
-  width: 100%;
+
+.flexcroll2{
+        width:550px;
+				height:500px;
+				margin-top: 20%;
+				margin-left: -50px;
+				overflow:scroll;
+			 }
+.flexcroll2{
+scrollbar-face-color: white;
+
 }
 
-.about-font-style--big {
-  font-size: 28px;
-  text-shadow: 5px 2px pink;
-  color: purple;
+/* Let's get this party started */
+.flexcroll2::-webkit-scrollbar {
+width: 6px;
 }
 
-.about-font-style--small {
-   color: purple;
-   font-size: 24px;
-   text-shadow: 3px 2px pink;
+/* Handle */
+.flexcroll2::-webkit-scrollbar-thumb {
+-webkit-border-radius: 10px;
+border-radius: 10px;
+background: rgba(255,0,0,0.8);
+-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
 }
 
-.about-font-style--big-m {
-  font-size: 32px;
-  text-shadow: 5px 2px pink;
-  color: purple;
+.flexcroll{
+  width:80%;
+  height:90%;
+  overflow:scroll;
+	float: right;
+  margin: 20px auto;
+           }
+
+/* Let's get this party started */
+.flexcroll::-webkit-scrollbar {
+    width: 6px;
 }
 
-.about-font-style--small-m {
-  font-size: 22px;
-  text-shadow: 5px 2px pink;
-  color: purple;
-}
 
-.about-img-home {
-  Width: 200px;
-  height: auto;
+/* Handle */
+.flexcroll::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: rgba(255,0,0,0.8);
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
 }

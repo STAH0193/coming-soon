@@ -6,7 +6,6 @@
 
   .events-header {
     letter-spacing: 0px;
-    width: 500px;
   }
 
   .index-about {
@@ -59,7 +58,6 @@
     width: 300px;
   }
 
-
 }
 
 @media only screen and (max-width: 320px) {
@@ -79,6 +77,9 @@
 
   .index-about, .index-media, .index-contact, .index-events {
 width: 270px;
+}
 
-
+.events-table {
+  width: 400px;
+}
 }
