@@ -130,6 +130,7 @@ margin: 20px;
 	width: 65%;
 	font-size: 2em;
 	margin: auto;
+	word-wrap: break-word;
 	font-family: "Comic Sans MS";
 
 }
