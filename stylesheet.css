@@ -19,12 +19,16 @@ background-attachment: fixed;
 }
 
 footer {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  padding: 1rem;
-  text-align: center;
+	font-size:10px;
+	font-weight: bold;
+	text-align: center;
+	letter-spacing: .5em;
+	color: white;
+	text-shadow: 2px 1px red;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	left: 0;
 }
 
 .about-formating {
@@ -37,7 +41,7 @@ footer {
 }
 
 .about-test {
-	background-image: url('images/wow2.gif');
+
 }
 
 .rotating {

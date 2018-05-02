@@ -75,6 +75,7 @@
     width: 300px;
   }
 
+
 }
 
 @media only screen and (max-width: 320px) {
@@ -99,7 +100,4 @@ width: 270px;
 .events-table {
   width: 400px;
   font-size: 1em;
-}
-
-
 }

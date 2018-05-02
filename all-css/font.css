@@ -9,6 +9,13 @@
     letter-spacing: 1em;
 }
 
+.about-header {
+  letter-spacing: 10px;
+  text-align: center;
+  font-size: 5em;
+  letter-spacing: 0px;
+  margin: 20px;
+}
 .events-header {
 	letter-spacing: 20px;
 }
@@ -18,23 +25,7 @@
   color: white;
   text-shadow: 2px 1px red;
 }
-.contact-header {
-    font-size:5em;
-    font-weight: bold;
-    text-align: center;
-    color: white;
-    text-shadow: 10px 2px red;
-    letter-spacing: 1em;
-}
 
-.contact-header-chat {
-  letter-spacing: .4em;
-  font-size: 2em;
-  text-shadow: 3px 1px red;
-  font-weight: bold;
-  text-align: center;
-  color: white;
-}
 
 .footer-style {
     font-size:10px;
@@ -44,6 +35,8 @@
     color: white;
     text-shadow: 2px 1px red;
     position: relative;
+    padding-top: 10px;
+    padding-bottom: 10px;
     bottom: 0;
 }
 
