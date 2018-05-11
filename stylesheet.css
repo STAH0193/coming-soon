@@ -31,6 +31,15 @@ footer {
 	left: 0;
 }
 
+.grid-container {
+	display: grid;
+	grid-template-columns: auto;
+}
+
+.grid-item {
+	text-align: center;
+}
+
 .about-formating {
   background-image: url('images/selfie3.jpg');
   background-repeat: no-repeat;
