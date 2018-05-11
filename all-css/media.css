@@ -11,6 +11,15 @@
  margin-right: auto;
 }
 
+.media-images--shape21 {
+  height: 350px;
+ width: auto;
+ max-width: 470px;
+ display: block;
+ margin-left: auto;
+ margin-right: auto;
+}
+
 .media-images--jellybean3D {
   height: 350px;
   width:700px;
