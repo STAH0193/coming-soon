@@ -5,6 +5,7 @@
 .media-images--shape22 {
   height: 350px;
  width: auto;
+ max-width: 470px;
  display: block;
  margin-left: auto;
  margin-right: auto;
