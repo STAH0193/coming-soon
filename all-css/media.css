@@ -25,6 +25,13 @@
   width:700px;
 }
 
+.media-images--jellybean2D {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
 .media-header {
   text-align: center;
   font-size: 5em;
