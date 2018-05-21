@@ -2,18 +2,30 @@
     background: repeating-linear-gradient(45deg, #606dbc, #606dbc 1px, #465298 1px, #465298 5px);
     border:1px solid aqua;
     padding: 2em;
-    box-shadow: 20px 20px 10px grey;
-    max-height: 250px;
+    box-shadow: 10px 10px 5px grey;
     max-width: 250px;
-    margin: auto;
-    width: 50%;
+    margin-top: 75px;
+    margin-bottom: 100px;
+    height: 200px;
+
+
 }
 
 .contact-selfie {
-	max-height: 400px;
-  max-width: 400px;
-	width: 100%;
-	box-shadow: 20px 20px 10px grey;
+	box-shadow: 10px 10px 5px grey;
+  width: 100%;
+
+  margin-bottom: -100px;
+
+}
+
+.contact-header-space {
+  height: 20px;
+}
+.contact-container {
+  margin: auto;
+  height: 100%;
+  padding-bottom: 10%;
 }
 
 .contact-header {
