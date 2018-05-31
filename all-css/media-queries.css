@@ -1,13 +1,48 @@
 @media only screen and (max-width: 475px) {
   .contact-header {
-font-size: 4em;
+    font-size: 4em;
   }
+
 }
+
+
+
 
 @media only screen and (max-width: 375px) {
   .contact-header {
 font-size: 3em;
 letter-spacing: 10px
+  }
+}
+
+ @media only screen and (max-width: 1200px) {
+  .about-first {
+    display: none;
+  }
+  .grass {
+    width: 1150px;
+
+  }
+
+  .window {
+    padding-bottom: 50px;
+  }
+
+}
+
+@media only screen and (max-width: 995px) {
+  .grass {
+    display: none;
+  }
+
+  .mitch-sider {
+    letter-spacing: 40px;
+  }
+}
+
+@media only screen and (min-width: 995px) {
+  .halfgrass {
+    display: none;
   }
 }
 
