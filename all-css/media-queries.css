@@ -1,63 +1,71 @@
-@media only screen and (max-width: 475px) {
-  .contact-header {
-    font-size: 4em;
+@media only screen and (max-width: 320px) {
+  .mitch-header {
+    font-size: 5em;
+    letter-spacing: 5px;
   }
 
+  .bc-iframe {
+    width: 100%;
+    height: 255px;
+  }
+
+  .vimeo-iframe {
+    width: 100%;
+  }
+
+  .index-about, .index-media, .index-contact, .index-events {
+width: 270px;
 }
 
+.events-table {
+  width: 400px;
+  font-size: 1em;
+}
+}
 
 
 
 @media only screen and (max-width: 375px) {
   .contact-header {
-font-size: 3em;
-letter-spacing: 10px
+    font-size: 3em;
+    letter-spacing: 10px
   }
 }
 
- @media only screen and (max-width: 1200px) {
-  .about-first {
+@media only screen and (max-width: 414px) {
+  .about_desktop {
     display: none;
   }
-  .grass {
-    width: 1150px;
 
+  .about_mobile {
+    overflow-y: hidden;
+  }
+  .mitch-sider {
+    width: 100%;
+    text-align: left;
+    margin-right: 20px;
   }
 
   .window {
-    padding-bottom: 50px;
-  }
-
-}
-
-@media only screen and (max-width: 995px) {
-  .grass {
-    display: none;
-  }
-
-  .mitch-sider {
-    letter-spacing: 40px;
+    width: 90%;
+    text-align: center;
+    margin-left: 5%;
   }
 }
 
-@media only screen and (min-width: 995px) {
-  .halfgrass {
+@media only screen and (min-width: 414px) {
+  .about_mobile {
     display: none;
   }
 }
 
-
-
-@media only screen and (min-width:768px) {
-    .bc-iframe {
-      width: 300px;
-      height: 300px;
-  }
-
-  .vimeo-iframe {
-    width: 300px;
+@media only screen and (max-width: 475px) {
+  .contact-header {
+    font-size: 4em;
   }
 }
+
+
 
 @media only screen and (max-width: 767px) {
   .mitch-header {
@@ -132,26 +140,66 @@ letter-spacing: 10px
 
 }
 
-@media only screen and (max-width: 320px) {
-  .mitch-header {
-    font-size: 5em;
-    letter-spacing: 5px;
-  }
 
-  .bc-iframe {
-    width: 100%;
-    height: 255px;
+
+@media only screen and (min-width:768px) {
+    .bc-iframe {
+      width: 300px;
+      height: 300px;
   }
 
   .vimeo-iframe {
-    width: 100%;
+    width: 300px;
   }
-
-  .index-about, .index-media, .index-contact, .index-events {
-width: 270px;
 }
 
-.events-table {
-  width: 400px;
-  font-size: 1em;
+
+
+@media only screen and (max-width: 995px) {
+  .grass {
+    display: none;
+  }
+
+  .mitch-sider {
+  }
+}
+
+@media only screen and (min-width: 995px) {
+  .halfgrass {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1199px) {
+  .about_desktop {
+    width: 100%;
+    margin-right: 20px;
+
+  }
+
+  .window {
+    margin-right: 6px;
+    margin-top: 15px;
+  }
+
+  .mitch-sider {
+    margin-left: 20%;
+
+  }
+
+}
+
+ @media only screen and (max-width: 1200px) {
+  .about-first {
+    display: none;
+  }
+  .grass {
+    width: 1150px;
+
+  }
+
+  .window {
+    padding-bottom: 50px;
+  }
+
 }

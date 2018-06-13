@@ -22,7 +22,28 @@ background-attachment: fixed;
   display: none;
 }
 
+#footer {
 
+    bottom:0;
+    left:0;
+    right:0;
+    width:100%;
+}
+
+#footerContainer {
+    position:relative;
+    width:100%;
+
+}
+
+#imginthefooter {
+    background: url(Images/halfgrass.png) no-repeat;
+    width:100%;
+    height: auto;
+		margin-bottom: 500px;
+
+    position: absolute;
+}​​​​​​​​​
 
 
 .mirror:hover {
@@ -48,10 +69,11 @@ footer {
 	letter-spacing: .5em;
 	color: white;
 	text-shadow: 2px 1px red;
-	position: absolute;
+	position: relative;
 	right: 0;
 	bottom: 0;
 	left: 0;
+	z-index: 1;
 }
 
 .grid-container {

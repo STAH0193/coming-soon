@@ -22,31 +22,19 @@
   text-shadow: 2px 1px red;
 }
 
-
 .footer-style {
-    font-size:10px;
-    font-weight: bold;
-    text-align: center;
-    letter-spacing: .5em;
-    color: white;
-    text-shadow: 2px 1px red;
-    position: relative;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    bottom: 0;
+  background-image: url("images/halfgrass.png");
 }
-
 .mitch-sider {
-    font-size:7em;
+    font-size:100px;
     font-weight: bold;
     text-align: center;
     color: white;
     text-shadow: 10px 2px red;
-    letter-spacing: 1em;
     margin: 0;
     margin-top: 40px;
     margin-bottom: 40px;
-
+    letter-spacing: 40px;
 }
 
 

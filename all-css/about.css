@@ -14,12 +14,8 @@ html, body{
 }
 
 .halfgrass {
-  width: 500px;
   height: auto;
   position: absolute;
-  z-index: 2;
-  top: 466px;
-  margin-right: 50px;
 }
 
 .selfie9 {
@@ -41,6 +37,11 @@ html, body{
   height: 285px;
   width: 375px;
 
+}
+
+.about-footer {
+  background-image: url("images/halfgrass.png");
+   background-size: 2000px 2000px;
 }
 
 .window:hover {
